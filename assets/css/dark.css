@@ -1,0 +1,38 @@
+:root {
+  --darkBgColor: #0B0E3D;
+  --darkMainTextColor: #FFFFFF;
+}
+
+body.dark {
+  background: var(--darkBgColor);
+}
+.dark .page {
+  background: var(--darkBgColor) url('../images/bg_dark.png') no-repeat bottom;
+  background-size: contain;
+}
+.dark .header-title {
+  color: var(--darkMainTextColor);
+}
+.dark .chance-cont h3 {
+  color: var(--darkMainTextColor);
+}
+.dark .score-cont h3 {
+  color: var(--darkMainTextColor);
+}
+.dark .game-over-text {
+  color: var(--darkMainTextColor);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background: #7bf16b;
+  }
+  .page {
+    background: #7bf16b;
+  }
+} */
+
+@media (prefers-color-scheme: light) {
+  .day.light-scheme   { background: white; color:  #555; }
+  .night.light-scheme { background:  #eee; color: black; }
+}

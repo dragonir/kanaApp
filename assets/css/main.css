@@ -1,3 +1,8 @@
+:root {
+  --themeBgColor: #FAECDA;
+  --themeMainTextColor: #2D2D2D;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +18,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   overflow: hidden;
-  background: rgb(250, 236, 218);
+  background: var(--themeBgColor);
 }
 button {
   display: block;
@@ -31,8 +36,7 @@ button {
   border-bottom: 5px solid #038129;
   text-shadow: 0px -2px #29b982;
 }
-button:hover,
-.answer-pad-item:hover {
+button:active, .answer-pad-item:active {
   background-color: #7bf16b;
 }
 .option_container {
@@ -52,12 +56,13 @@ button:hover,
   left: 0;
   z-index: 9999;
   width: 100%;
+  height: 4rem;
 }
 .header-title {
   padding: 0.5rem;
   margin: 2rem;
   text-align: center;
-  color: #000000;
+  color: var(--themeMainTextColor);
 }
 .mode_toggle {
   display: inline-block;
@@ -69,16 +74,18 @@ button:hover,
   right: 2rem;
   top: 3rem;
 }
+
 /* Page */
 .page {
+  top: 4rem;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 90vh;
-  background: rgb(250, 236, 218) url('../images/bg.png') no-repeat bottom;
+  height: calc(100vh - 4rem);
+  background: var(--themeBgColor) url('../images/bg.png') no-repeat bottom;
   background-size: contain;
 }
 
@@ -87,9 +94,9 @@ button:hover,
   width: 100%;
 }
 .chance-cont h3 {
-  font-size: 1.5rem;
+  color: var(--themeMainTextColor);
+  font-size: 1.1rem;
   padding: 0 1.6rem;
-  text-align: right;
 }
 
 /* Score */
@@ -98,10 +105,11 @@ button:hover,
   justify-content: center;
   text-align: center;
   width: 100%;
-  margin: 1rem auto 2rem;
+  margin: 1rem auto;
 }
 .score-cont h3 {
-  font-size: 1.2rem;
+  color: var(--themeMainTextColor);
+  font-size: 1.1rem;
   width: 50%;
 }
 
@@ -110,29 +118,38 @@ button:hover,
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 16rem;
-  height: 16rem;
+  width: 14rem;
+  height: 14rem;
   border-radius: 1rem;
   border: .05rem solid #EFEFEF;
   background: rgba(242, 242, 242, 0.5);
-  backdrop-filter: blur(1.6rem);
   box-shadow: 0 .1rem 4rem rgb(0, 0, 0, .2);
   margin-bottom: 4rem;
   z-index: 999;
+  position: relative;
+  overflow: hidden;
 }
+.question-box:after {
+  background: rgba(242, 242, 242, 0.5);
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  filter: blur(2rem);
+}
+
 .question-box-letter {
   font-size: 6rem;
   text-shadow: 1px 1px 1px #EFEFEF, 2px 2px 2px #EFEFEF, 3px 3px 3px #EFEFEF, 4px 4px 4px #2D2D2D;
 }
 /* Answer Pad */
 .answer-pad-cont {
-  position: absolute;
-  bottom: 2.5rem;
-  left: 0;
   z-index: 9998;
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-bottom: 4rem;
 }
 .answer-pad-item {
   position: relative;
@@ -160,15 +177,16 @@ button:hover,
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  border: 0.2rem solid black;
+  border: 0.2rem solid #000000;
   border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background: #FFFFFF;
+  color: var(--themeMainTextColor);
   width: 1rem;
   height: 1rem;
   pointer-events: none;
 }
 .game-over-text {
+  color: var(--themeMainTextColor);
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -177,30 +195,8 @@ button:hover,
   left: -1rem;
 }
 .wrong {
-  background-color: red;
+  background-color: rgb(245, 92, 92);
 }
 .hidden {
   display: none;
-}
-
-body.dark {
-  background: #000000;
-}
-.dark .page {
-  background: #000000;
-}
-
-
-/* @media (prefers-color-scheme: dark) {
-  body {
-    background: #7bf16b;
-  }
-  .page {
-    background: #7bf16b;
-  }
-} */
-
-@media (prefers-color-scheme: light) {
-  .day.light-scheme   { background: white; color:  #555; }
-  .night.light-scheme { background:  #eee; color: black; }
 }

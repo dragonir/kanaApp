@@ -1,6 +1,6 @@
 ## かなゲーム
 
-![logo]('./images/icon-64x64.png')
+![logo]('https://dragonir.github.io/kanaApp/assets/images/icon-64x64.png')
 
 > 在线体验地址 <https://dragonir.github.io/kanaApp/>
 
@@ -20,5 +20,5 @@
 * 樱花效果
 * 样式优化
 * ✔ PWA 保存到桌面
-* 深色浅色模式替换
+* ✔ 深色浅色模式替换
 * 礼炮庆祝效果🎉
