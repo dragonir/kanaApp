@@ -1,0 +1,20 @@
+{
+  "name": "kana games",
+  "short_name": "kana",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "かなゲーム",
+  "icons": [
+    {
+      "src": "assets/images/icon-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}

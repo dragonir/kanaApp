@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/petals.css">
+  <link rel="shortcut icon" href="./assets/images/icon-64x64.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <title>かなゲーム</title>
+</head>
+<body>
+  <div id="petals-container">
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+  </div>
+  <!-- Header -->
+  <div class="header">
+    <h1 class="header-title">かなゲーム</h1>
+    <i class="mode_toggle"></i>
+  </div>
+  <!-- Options Page -->
+  <div class="page" data-page="options">
+    <div class="option_container">
+      <button class="option_button animate green" data-open="game" data-close="options">ひらがな</button>
+      <button class="option_button animate green" data-open="game" data-close="options">カタカナ</button>
+      <button class="option_button animate green" data-open="game" data-close="options">ALL KANA</button>
+    </div>
+  </div>
+  <!-- Game Page -->
+  <div class="page hidden" data-page="game">
+    <!-- Chances -->
+    <div class="chance-cont">
+      <h3>機会：<span class="chances-left">0</span></h3>
+    </div>
+    <!-- Score -->
+    <div class="score-cont">
+      <h3 class="score-item">スコア<br><span class="score-label">0</span></h3>
+      <h3 class="score-item">最高のスコア<br><span class="high-score-label">0</span></h3>
+    </div>
+    <!-- Question Box -->
+    <div class="question-box">
+      <h1 class="question-box-letter" data-answer-id="">?</h1>
+    </div>
+    <!-- Answer Pad -->
+    <div class="answer-pad-cont">
+      <div class="answer-pad-item">
+        <div class="answer-pad-circle"></div>
+        <h2>a</h2>
+      </div>
+      <div class="answer-pad-item">
+        <div class="answer-pad-circle"></div>
+        <h2>i</h2>
+      </div>
+      <div class="answer-pad-item">
+        <div class="answer-pad-circle"></div>
+        <h2>u</h2>
+      </div>
+      <div class="answer-pad-item">
+        <div class="answer-pad-circle"></div>
+        <h2>e</h2>
+      </div>
+    </div>
+  </div>
+  <!-- Game Over Page -->
+  <div class="page hidden" data-page="game-over">
+    <h1 class="game-over-text">Cool! You made <br><span class="game-over-score">0</span> points!</h1>
+    <button data-open="options" data-close="game-over">もう一度</button>
+  </div>
+</body>
+<script src="assets/js/kanaList.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/petals.js"></script>
+<script>
+  window.addEventListener('load', () => {
+    registerSW();
+  });
+  async function registerSW() {
+  if ('serviceWorker' in navigator) {
+    try {
+      await navigator.serviceWorker.register('./sw.js');
+    } catch (e) {
+      console.log(`SW registration failed`);
+    }
+  }
+}
+</script>
+</html>
