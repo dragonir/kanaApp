@@ -185,10 +185,23 @@ button:active, .answer-pad-item:active {
   height: 1rem;
   pointer-events: none;
 }
+
+.game_over_banner {
+  display: inline-block;
+  height: 12rem;
+  width: 12rem;
+  background: url('../images/prize.png') no-repeat center;
+  background-size: 100% 100%;
+  margin: -4rem auto 2rem;
+}
+
 .game-over-text {
+  font-size: 2.4rem;
   color: var(--themeMainTextColor);
   text-align: center;
   margin-bottom: 2rem;
+  color: #FFFC00;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .3), 2px 2px 2px rgba(0, 0, 0, .3);
 }
 .switch-on {
   bottom: -1rem;

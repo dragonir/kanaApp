@@ -6,7 +6,9 @@ const staticAssets = [
   './assets/js/main.js',
   './assets/js/kanaList.js',
   './assets/json/kanaList.json',
-  './assets/images/bg.png'
+  './assets/images/bg.png',
+  './assets/images/bg_dark.png',
+  './assets/images/mode_toggle.png'
 ];
 
 self.addEventListener('install', async e => {
