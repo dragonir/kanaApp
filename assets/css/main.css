@@ -4,7 +4,6 @@
   --countTextColor: #1C2363;
   --countBgColor: #1C2363;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +45,7 @@ button:active {
   width: 100%;
   padding: 0 1.6rem;
   text-align: center;
-  margin-top: -100px;
+  margin-top: -4rem;
   position: relative;
   z-index: 9999;
 }
@@ -63,7 +62,7 @@ button:active {
   width: 100%;
   height: 15rem;
   background: url('../images/miraitowa.png') no-repeat center;
-  background-size: auto 100%;
+  background-size: auto 95%;
 }
 .header-title {
   padding: 0.5rem;
@@ -80,6 +79,7 @@ button:active {
   position: absolute;
   right: 2rem;
   top: 2rem;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .25));
 }
 
 /* Page */
@@ -104,8 +104,9 @@ button:active {
   width: 94%;
   border-radius: 12px;
   padding: .2rem 0;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #EEEEEE;
   border-bottom: 5px solid #CCCCCC;
+  box-shadow: 0 1px 5px rgb(0, 0, 0, .1);
 }
 /* Score */
 .score_cont {
@@ -132,12 +133,12 @@ button:active {
   border-radius: 1rem;
   border: .05rem solid #EFEFEF;
   background: rgba(242, 242, 242, 0.5);
-  box-shadow: 0 .1rem 4rem rgb(0, 0, 0, .2);
+  box-shadow: 0 1px 5px rgb(0, 0, 0, .15);
   margin-bottom: 3rem;
   z-index: 9999;
   position: relative;
   overflow: hidden;
-  border-bottom: 5px solid #CCCCCC;
+  border-bottom: 5px solid #EFEFEF;
 }
 .question_box:after {
   background: rgba(242, 242, 242, 0.5);
