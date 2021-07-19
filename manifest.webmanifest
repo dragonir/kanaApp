@@ -1,6 +1,6 @@
 {
-  "name": "kana games",
-  "short_name": "kana",
+  "name": "かなゲーム",
+  "short_name": "かなゲーム",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#fff",

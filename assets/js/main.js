@@ -7,7 +7,7 @@ const answerPadCircles = document.querySelectorAll(".answer-pad-circle");
 const scoreLabel = document.querySelector(".score-label");
 const highScoreLabel = document.querySelector(".high-score-label");
 const chancesLeftLabel = document.querySelector(".chances-left");
-const questionLabel = document.querySelector(".question-box-letter");
+const questionLabel = document.querySelector(".question_box_letter");
 const modeToggle = document.querySelector('.mode_toggle');
 
 modeToggle.addEventListener('click', function() {

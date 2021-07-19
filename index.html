@@ -15,7 +15,8 @@
   <title>かなゲーム</title>
 </head>
 <body>
-  <div id="petals-container">
+  <!-- petals -->
+  <div id="petals_container">
     <div class="petal"></div>
     <div class="petal"></div>
     <div class="petal"></div>
@@ -32,33 +33,31 @@
     <div class="petal"></div>
     <div class="petal"></div>
   </div>
-  <!-- Header -->
+  <!-- title -->
   <div class="header">
-    <h1 class="header-title">かなゲーム</h1>
     <i class="mode_toggle"></i>
+    <i class="miraitowa"></i>
   </div>
   <!-- Options Page -->
   <div class="page" data-page="options">
     <div class="option_container">
       <button class="option_button animate green" data-open="game" data-close="options">ひらがな</button>
       <button class="option_button animate green" data-open="game" data-close="options">カタカナ</button>
-      <button class="option_button animate green" data-open="game" data-close="options">kana</button>
+      <button class="option_button animate green" data-open="game" data-close="options">ALL KANA</button>
     </div>
   </div>
   <!-- Game Page -->
   <div class="page hidden" data-page="game">
-    <!-- Chances -->
-    <div class="chance-cont">
-      <h3>機会：<span class="chances-left">0</span></h3>
-    </div>
-    <!-- Score -->
-    <div class="score-cont">
-      <h3 class="score-item">スコア<br><span class="score-label">0</span></h3>
-      <h3 class="score-item">最高のスコア<br><span class="high-score-label">0</span></h3>
+    <div class="count_box">
+      <div class="score_cont">
+        <h3>機会<br><span class="chances-left">0</span></h3>
+        <h3 class="score-item">スコア<br><span class="score-label">0</span></h3>
+        <h3 class="score-item">最高のスコア<br><span class="high-score-label">0</span></h3>
+      </div>
     </div>
     <!-- Question Box -->
-    <div class="question-box">
-      <h1 class="question-box-letter" data-answer-id="">?</h1>
+    <div class="question_box">
+      <h1 class="question_box_letter" data-answer-id="">?</h1>
     </div>
     <!-- Answer Pad -->
     <div class="answer-pad-cont">

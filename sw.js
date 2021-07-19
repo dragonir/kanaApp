@@ -3,12 +3,20 @@ const staticAssets = [
   './',
   './index.html',
   './assets/css/main.css',
+  './assets/css/dark.css',
+  './assets/css/petals.css',
   './assets/js/main.js',
   './assets/js/kanaList.js',
+  './assets/js/petals.js',
   './assets/json/kanaList.json',
   './assets/images/bg.png',
   './assets/images/bg_dark.png',
-  './assets/images/mode_toggle.png'
+  './assets/images/mode_toggle.png',
+  './assets/images/miraitowa.png',
+  './assets/images/icon-64x64.png',
+  './assets/images/icon-256x256.png',
+  './assets/images/petal.png',
+  './assets/images/prize.png',
 ];
 
 self.addEventListener('install', async e => {

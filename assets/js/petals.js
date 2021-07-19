@@ -2,7 +2,7 @@ var petalPlayers = [];
 function animatePetals() {
   var petals = document.querySelectorAll('.petal');
   if (!petals[0].animate) {
-    var petalsContainer = document.getElementById('petals-container');
+    var petalsContainer = document.getElementById('petals_container');
     return false;
   }
   for (var i = 0, len = petals.length; i < len; ++i) {

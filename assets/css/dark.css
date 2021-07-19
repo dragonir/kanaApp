@@ -1,6 +1,7 @@
 :root {
   --darkBgColor: #0B0E3D;
   --darkMainTextColor: #FFFFFF;
+  --darkCountColor: #1C2363;
 }
 
 body.dark {
@@ -14,10 +15,10 @@ body.dark {
   color: var(--darkMainTextColor);
 }
 .dark .chance-cont h3 {
-  color: var(--darkMainTextColor);
+  color: var(--darkCountColor);
 }
-.dark .score-cont h3 {
-  color: var(--darkMainTextColor);
+.dark .score_cont h3 {
+  color: var(--darkCountColor);
 }
 .dark .game-over-text {
   color: var(--darkMainTextColor);
