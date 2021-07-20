@@ -7,12 +7,9 @@
 body.dark {
   background: var(--darkBgColor);
 }
-.dark .page {
-  background: var(--darkBgColor) url('../images/bg_dark.png') no-repeat bottom;
-  background-size: contain;
-}
-.dark .header-title {
-  color: var(--darkMainTextColor);
+.dark .torii {
+  background: url('../images/bg_dark.png') no-repeat bottom;
+  background-size: 100% auto;
 }
 .dark .chance-cont h3 {
   color: var(--darkCountColor);
@@ -20,7 +17,7 @@ body.dark {
 .dark .score_cont h3 {
   color: var(--darkCountColor);
 }
-.dark .game-over-text {
+.dark .game_over_text {
   color: var(--darkMainTextColor);
 }
 

@@ -15,6 +15,14 @@
   <title>かなゲーム</title>
 </head>
 <body>
+  <div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer__content">
+      <i class="icon-wx mod-orient-layer__icon-orient"></i>
+      <div class="mod-orient-layer__desc">
+        竖握手机，精彩继续
+      </div>
+    </div>
+  </div>
   <!-- petals -->
   <div id="petals_container">
     <div class="petal"></div>
@@ -50,9 +58,9 @@
   <div class="page hidden" data-page="game">
     <div class="count_box">
       <div class="score_cont">
-        <h3>機会<br><span class="chances-left">0</span></h3>
-        <h3 class="score-item">スコア<br><span class="score-label">0</span></h3>
-        <h3 class="score-item">最高のスコア<br><span class="high-score-label">0</span></h3>
+        <h3>機会<br><span class="chances_left">0</span></h3>
+        <h3 class="score_item">スコア<br><span class="score_label">0</span></h3>
+        <h3 class="score_item">最高のスコア<br><span class="high_score_label">0</span></h3>
       </div>
     </div>
     <!-- Question Box -->
@@ -60,31 +68,32 @@
       <h1 class="question_box_letter" data-answer-id="">?</h1>
     </div>
     <!-- Answer Pad -->
-    <div class="answer-pad-cont">
-      <div class="answer-pad-item">
-        <div class="answer-pad-circle"></div>
+    <div class="answer_pad_cont">
+      <div class="answer_pad_item">
+        <div class="answer_pad_circle"></div>
         <h2>a</h2>
       </div>
-      <div class="answer-pad-item">
-        <div class="answer-pad-circle"></div>
+      <div class="answer_pad_item">
+        <div class="answer_pad_circle"></div>
         <h2>i</h2>
       </div>
-      <div class="answer-pad-item">
-        <div class="answer-pad-circle"></div>
+      <div class="answer_pad_item">
+        <div class="answer_pad_circle"></div>
         <h2>u</h2>
       </div>
-      <div class="answer-pad-item">
-        <div class="answer-pad-circle"></div>
+      <div class="answer_pad_item">
+        <div class="answer_pad_circle"></div>
         <h2>e</h2>
       </div>
     </div>
   </div>
   <!-- Game Over Page -->
-  <div class="page hidden" data-page="game-over">
+  <div class="page hidden" data-page="game_over">
     <i class="game_over_banner"></i>
-    <h1 class="game-over-text">すごいね！ <br><span class="game-over-score">0</span> 分!</h1>
-    <button data-open="options" data-close="game-over">もう一度</button>
+    <h1 class="game_over_text">すごいね！ <br><span class="game_over_score">0</span>分</h1>
+    <button data-open="options" data-close="game_over">もう一度</button>
   </div>
+  <div class="torii"></div>
 </body>
 <script src="assets/js/kanaList.js"></script>
 <script src="assets/js/main.js"></script>

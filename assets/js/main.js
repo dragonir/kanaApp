@@ -2,11 +2,11 @@
 
 // DOM
 const btns = document.querySelectorAll("BUTTON");
-const answerPadItem = document.querySelectorAll(".answer-pad-item");
-const answerPadCircles = document.querySelectorAll(".answer-pad-circle");
-const scoreLabel = document.querySelector(".score-label");
-const highScoreLabel = document.querySelector(".high-score-label");
-const chancesLeftLabel = document.querySelector(".chances-left");
+const answerPadItem = document.querySelectorAll(".answer_pad_item");
+const answerPadCircles = document.querySelectorAll(".answer_pad_circle");
+const scoreLabel = document.querySelector(".score_label");
+const highScoreLabel = document.querySelector(".high_score_label");
+const chancesLeftLabel = document.querySelector(".chances_left");
 const questionLabel = document.querySelector(".question_box_letter");
 const modeToggle = document.querySelector('.mode_toggle');
 
@@ -92,9 +92,9 @@ function initGame(gameType) {
 
 // Game Over
 function gameOver() {
-  document.querySelector(".game-over-score").textContent = game.score;
+  document.querySelector(".game_over_score").textContent = game.score;
   document.querySelector(`[data-page="game"]`).classList.add("hidden");
-  document.querySelector(`[data-page="game-over"]`).classList.remove("hidden");
+  document.querySelector(`[data-page="game_over"]`).classList.remove("hidden");
 }
 
 // Add Score
