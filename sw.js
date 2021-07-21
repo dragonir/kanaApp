@@ -11,6 +11,7 @@ const staticAssets = [
   './assets/json/kanaList.json',
   './assets/images/bg.png',
   './assets/images/bg_dark.png',
+  './assets/images/landscape.png',
   './assets/images/mode_toggle.png',
   './assets/images/miraitowa.png',
   './assets/images/icon-64x64.png',

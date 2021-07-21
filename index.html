@@ -15,14 +15,7 @@
   <title>かなゲーム</title>
 </head>
 <body>
-  <div id="orientLayer" class="mod-orient-layer">
-    <div class="mod-orient-layer__content">
-      <i class="icon-wx mod-orient-layer__icon-orient"></i>
-      <div class="mod-orient-layer__desc">
-        竖握手机，精彩继续
-      </div>
-    </div>
-  </div>
+  <div class="mod_orient_layer"></div>
   <!-- petals -->
   <div id="petals_container">
     <div class="petal"></div>
@@ -99,10 +92,10 @@
 <script src="assets/js/main.js"></script>
 <script src="assets/js/petals.js"></script>
 <script>
-  window.addEventListener('load', () => {
-    registerSW();
-  });
-  async function registerSW() {
+window.addEventListener('load', () => {
+  registerSW();
+});
+async function registerSW() {
   if ('serviceWorker' in navigator) {
     try {
       await navigator.serviceWorker.register('./sw.js');
