@@ -16,7 +16,6 @@ const staticAssets = [
   './assets/images/miraitowa.png',
   './assets/images/icon-64x64.png',
   './assets/images/icon-256x256.png',
-  './assets/images/petal.png',
   './assets/images/prize.png',
 ];
 
