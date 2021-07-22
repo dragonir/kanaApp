@@ -3,7 +3,6 @@
   --darkMainTextColor: #FFFFFF;
   --darkCountColor: #1C2363;
 }
-
 body.dark {
   background: var(--darkBgColor);
 }
@@ -18,19 +17,6 @@ body.dark {
   color: var(--darkCountColor);
 }
 .dark .game_over_text {
-  color: var(--darkMainTextColor);
-}
-
-/* @media (prefers-color-scheme: dark) {
-  body {
-    background: #7bf16b;
-  }
-  .page {
-    background: #7bf16b;
-  }
-} */
-
-@media (prefers-color-scheme: light) {
-  .day.light-scheme   { background: white; color:  #555; }
-  .night.light-scheme { background:  #eee; color: black; }
+  color: var(--darkCountColor);
+  background: #EFEFEF;
 }
