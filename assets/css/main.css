@@ -49,7 +49,7 @@ button:active {
   width: 100%;
   padding: 0 1.6rem;
   text-align: center;
-  margin-top: -3rem;
+  margin-top: -3.5rem;
   position: relative;
   z-index: 999;
 }
@@ -251,7 +251,7 @@ button:active {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-2rem);
+    transform: translateY(2rem);
   }
   100% {
     transform: translateY(0);
@@ -262,7 +262,7 @@ button:active {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-2rem);
+    transform: translateY(2rem);
   }
   100% {
     transform: translateY(0);
@@ -273,7 +273,7 @@ button:active {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-2rem);
+    transform: translateY(2rem);
   }
   100% {
     transform: translateY(0);
@@ -284,7 +284,7 @@ button:active {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-2rem);
+    transform: translateY(2rem);
   }
   100% {
     transform: translateY(0);
